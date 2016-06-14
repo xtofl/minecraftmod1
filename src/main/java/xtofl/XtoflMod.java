@@ -12,10 +12,25 @@ public class XtoflMod
     public static final String VERSION = "0.1";
     
     @EventHandler
+    public void preInit(FMLInitializationEvent event)
+    {
+        System.out.println("Xtofl Mod preInit!");
+    }
+
+    @EventHandler
     public void init(FMLInitializationEvent event)
     {
 		// some example code
         System.out.println("Xtofl Mod initializing!");
         System.out.println("DIRT BLOCK >> "+Blocks.dirt.getUnlocalizedName());
     }
+
+    @EventHandler
+    public void postInit(FMLInitializationEvent event)
+    {
+        System.out.println("Xtofl Mod postInit!");
+    }
+
+    @Instance
+    static XtoflMod instance = new XtoflMod();
 }
