@@ -31,6 +31,4 @@ public class XtoflMod
         System.out.println("Xtofl Mod postInit!");
     }
 
-    @Instance
-    static XtoflMod instance = new XtoflMod();
 }
