@@ -2,3 +2,9 @@
 build/
 run/
 
+.metadata/
+*.swp
+.project
+.classpath
+.settings/
+*.launch
